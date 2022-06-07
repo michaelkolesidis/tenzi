@@ -84,14 +84,12 @@ main {
 
 /* Stats */
 .stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px 300px;
+  display: flex;
+  gap: 200px;
   margin: 40px 0 20px 0;
-  text-align:justify;
-
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
+  text-align: center;
 }
 
 /* Dice faces */
