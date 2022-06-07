@@ -8,8 +8,11 @@ import Footer from "./Footer";
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
   const [tenzies, setTenzies] = React.useState(false);
-  const [time, setTime] = React.useState(0);
+  // const [time, setTime] = React.useState(0);
   const [rolls, setRolls] = React.useState(0);
+
+  // const [bestTime, setBestTime] = React.useState(JSON.parse(localStorage.getItem("bestTime")) || 0);
+  const [bestRoll, setBestRoll] = React.useState(parseInt(localStorage.getItem("bestRoll")) || 0);
 
   React.useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
@@ -20,13 +23,14 @@ export default function App() {
     }
   }, [dice]);
 
-  let startTime = new Date();
+  React.useEffect(() => {
+    localStorage.setItem("bestRoll", bestRoll.toString())
+}, [bestRoll])
 
-  let endTime = new Date();
-
-  let timeDiff = endTime - startTime;
-
-  timeDiff /= 100;
+  // let startTime = new Date();
+  // let endTime = new Date();
+  // let timeDiff = endTime - startTime;
+  // timeDiff /= 100;
 
   function generateNewDie() {
     return {
@@ -54,10 +58,17 @@ export default function App() {
       setRolls((oldRolls) => oldRolls + 1);
     } else {
       setTenzies(false);
+
+      if (!bestRoll || rolls < bestRoll) {
+        setBestRoll(rolls)
+      }
+
       setDice(allNewDice());
       setRolls(0);
     }
   }
+
+  
 
   function holdDice(id) {
     setDice((oldDice) =>
@@ -91,10 +102,10 @@ export default function App() {
           {tenzies ? "New Game" : "Roll"}
         </button>
         <div className="stats">
-          <div>Time: {time}</div>
+          {/* <div>Time: {time}</div> */}
           <div>Rolls: {rolls}</div>
-          <div>Best : 10.3</div>
-          <div>Best : 3</div>
+          {/* {bestTime ? <div>Best : {bestTime}</div> : ""} */}
+          {bestRoll ? <div>Best : {bestRoll}</div> : ""}
         </div>
       </main>
       <Footer />
