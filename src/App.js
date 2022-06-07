@@ -63,17 +63,91 @@ export default function App() {
   ));
 
   return (
-    <main>
+    <>
       {tenzies && <Confetti />}
-      <h1 className="title">Tenzies</h1>
-      <p className="instructions">
-        Roll until all dice are the same. Click each die to freeze it at its
-        current value between rolls.
-      </p>
-      <div className="dice-container">{diceElements}</div>
-      <button className="roll-dice" onClick={rollDice}>
-        {tenzies ? "New Game" : "Roll"}
-      </button>
-    </main>
+      <svg
+        id="spinning-rays"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <path d="M50,50l100,-26.7949l0,53.5898z">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </path>
+        <path d="M50,50l100,-26.7949l0,53.5898z">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="60 50 50"
+            to="420 50 50"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </path>
+        <path d="M50,50l100,-26.7949l0,53.5898z">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="120 50 50"
+            to="480 50 50"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </path>
+        <path d="M50,50l100,-26.7949l0,53.5898z">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="180 50 50"
+            to="540 50 50"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </path>
+        <path d="M50,50l100,-26.7949l0,53.5898z">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="240 50 50"
+            to="600 50 50"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </path>
+        <path d="M50,50l100,-26.7949l0,53.5898z">
+          <animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="300 50 50"
+            to="660 50 50"
+            dur="60s"
+            repeatCount="indefinite"
+          />
+        </path>
+      </svg>
+      <main className="banner">
+        <h1 className="title">Tenzi!</h1>
+        <p className="instructions">
+          Roll until all dice are the same. Click each die to freeze it at its
+          current value between rolls.
+        </p>
+        <div className="dice-container">{diceElements}</div>
+        <button className="roll-dice" onClick={rollDice}>
+          {tenzies ? "New Game" : "Roll"}
+        </button>
+      </main>
+    </>
   );
 }
