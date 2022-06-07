@@ -7,6 +7,8 @@ import Background from "./Background";
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
   const [tenzies, setTenzies] = React.useState(false);
+  const [time, setTime] = React.useState(0);
+  const [rolls, setRolls] = React.useState(0);
 
   React.useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
@@ -16,6 +18,14 @@ export default function App() {
       setTenzies(true);
     }
   }, [dice]);
+
+  let startTime = new Date();
+
+  let endTime = new Date();
+
+ let timeDiff = endTime - startTime;
+
+  timeDiff /= 100;
 
   function generateNewDie() {
     return {
@@ -40,9 +50,11 @@ export default function App() {
           return die.isHeld ? die : generateNewDie();
         })
       );
+      setRolls(oldRolls => oldRolls + 1)
     } else {
       setTenzies(false);
       setDice(allNewDice());
+      setRolls(0)
     }
   }
 
@@ -77,6 +89,13 @@ export default function App() {
         <button className="roll-dice" onClick={rollDice}>
           {tenzies ? "New Game" : "Roll"}
         </button>
+        <div className="stats">
+        <div>Time: {time}</div>
+        <div>Rolls: {rolls}</div>
+        <div>Best : 10.3</div>
+        <div>Best : 3</div>
+        </div>
+
       </main>
       <footer>
         <p>

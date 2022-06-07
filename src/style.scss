@@ -82,32 +82,16 @@ main {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-self: left;
-  align-items: center;
-}
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 300px;
+  margin: 40px 0 20px 0;
+  text-align:justify;
 
-footer > p {
-  margin: 1.6rem;
-  font-size: 1.3rem;
   font-weight: 700;
-  letter-spacing: 0.1rem;
-
-  color: #fff;
-  text-shadow: 3px 1px 0px #000000;
-}
-
-a,
-a:visited {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-#heart {
-  font-size: 1.6rem;
+  font-size: 18px;
 }
 
 /* Dice faces */
@@ -179,4 +163,33 @@ a:visited {
 
 .fifth-face .column:nth-of-type(2) {
   justify-content: center;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-self: left;
+  align-items: center;
+}
+
+footer > p {
+  margin: 1.6rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+
+  color: #fff;
+  text-shadow: 3px 1px 0px #000000;
+}
+
+a,
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#heart {
+  font-size: 1.6rem;
 }
