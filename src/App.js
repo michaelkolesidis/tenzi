@@ -137,7 +137,7 @@ export default function App() {
           />
         </path>
       </svg>
-      <main className="banner">
+      <main>
         <h1 className="title">Tenzi!</h1>
         <p className="instructions">
           Roll until all dice are the same. Click each die to freeze it at its
@@ -148,6 +148,9 @@ export default function App() {
           {tenzies ? "New Game" : "Roll"}
         </button>
       </main>
+      <footer>
+        <p><a href="https://github.com/michaelkolesidis/tenzi" target="_blank" rel="noreferrer">Made with <span id="heart">♥</span> by  Michael Kolesidis</a></p>
+      </footer>
     </>
   );
 }
