@@ -3,6 +3,7 @@ import Die from "./Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 import Background from "./Background";
+import Footer from "./Footer";
 
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
@@ -23,7 +24,7 @@ export default function App() {
 
   let endTime = new Date();
 
- let timeDiff = endTime - startTime;
+  let timeDiff = endTime - startTime;
 
   timeDiff /= 100;
 
@@ -50,11 +51,11 @@ export default function App() {
           return die.isHeld ? die : generateNewDie();
         })
       );
-      setRolls(oldRolls => oldRolls + 1)
+      setRolls((oldRolls) => oldRolls + 1);
     } else {
       setTenzies(false);
       setDice(allNewDice());
-      setRolls(0)
+      setRolls(0);
     }
   }
 
@@ -90,24 +91,13 @@ export default function App() {
           {tenzies ? "New Game" : "Roll"}
         </button>
         <div className="stats">
-        <div>Time: {time}</div>
-        <div>Rolls: {rolls}</div>
-        <div>Best : 10.3</div>
-        <div>Best : 3</div>
+          <div>Time: {time}</div>
+          <div>Rolls: {rolls}</div>
+          <div>Best : 10.3</div>
+          <div>Best : 3</div>
         </div>
-
       </main>
-      <footer>
-        <p>
-          <a
-            href="https://github.com/michaelkolesidis/tenzi"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Made with <span id="heart">♥</span> by Michael Kolesidis
-          </a>
-        </p>
-      </footer>
+      <Footer />
     </>
   );
 }
