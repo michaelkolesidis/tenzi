@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./screenshots/screenshot-01.png" height="500px">
+  <img src="./screenshots/tenzi.gif" height="500px">
   <h1></h1>
   
   <h3>Roll until all dice are the same</h3>
@@ -43,6 +43,7 @@
 ## Screenshots
 
 <img src="./screenshots/screenshot-02.png" height="500px">
+<img src="./screenshots/screenshot-01.png" height="500px">
 
 
 
