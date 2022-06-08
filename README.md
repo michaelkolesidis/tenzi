@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./screenshots/screenshot-01.png" height="400px">
+  <img src="./screenshots/screenshot-01.png" height="500px">
   <h1></h1>
   
   <h3>Roll until all dice are the same</h3>
