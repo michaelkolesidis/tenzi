@@ -13,7 +13,6 @@ const Die: React.FC<Props> = (props) => {
   };
 
   function face() {
-    // eslint-disable-next-line default-case
     switch (props.value) {
       case 1:
         return (
