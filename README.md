@@ -21,7 +21,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://webpack.js.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/webpack/webpack-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.npmjs.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/yarn/yarn-original-wordmark.svg" height="90px" /></a>
+<a href="https://www.npmjs.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/yarn/yarn-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://sass-lang.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/sass/sass-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
