@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Background(props) {
+export default function Background() {
   return (
     <svg
       id="spinning-rays"

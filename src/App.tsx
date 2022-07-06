@@ -1,16 +1,16 @@
 import React from "react";
-import Die from "./Die";
+import Die from "./components/Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
-import Background from "./Background";
-import Footer from "./Footer";
+import Background from "./components/Background";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
   const [tenzies, setTenzies] = React.useState(false);
   const [rolls, setRolls] = React.useState(0);
   const [bestRoll, setBestRoll] = React.useState(
-    parseInt(localStorage.getItem("bestRoll")) || 0
+    parseInt(localStorage.getItem("bestRoll")!) || 0
   );
 
   React.useEffect(() => {
@@ -62,7 +62,7 @@ export default function App() {
     }
   }
 
-  function holdDice(id) {
+  function holdDice(id: string) {
     setDice((oldDice) =>
       oldDice.map((die) => {
         return die.id === id ? { ...die, isHeld: !die.isHeld } : die;
