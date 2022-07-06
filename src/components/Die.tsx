@@ -92,3 +92,4 @@ const Die: React.FC<Props> = (props) => {
 };
 
 export default Die;
+
