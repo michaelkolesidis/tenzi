@@ -84,7 +84,9 @@ export default function App() {
       {tenzies && <Confetti />}
       <Background />
       <main>
-      <a href="https://tenzi-react.netlify.app/"><h1 className="title">Tenzi!</h1></a>
+        <a href="https://tenzi-react.netlify.app/">
+          <h1 className="title">Tenzi!</h1>
+        </a>
         <p className="instructions">
           Roll until all dice are the same. Click each die to freeze it at its
           current value between rolls.
@@ -94,8 +96,20 @@ export default function App() {
           {tenzies ? "New Game" : "Roll"}
         </button>
         <div className="stats">
-          <div>Rolls:<br />{rolls}</div>
-          {bestRoll ? <div>Best:<br />{bestRoll}</div> : ""}
+          <div>
+            Rolls:
+            <br />
+            {rolls}
+          </div>
+          {bestRoll ? (
+            <div>
+              Best:
+              <br />
+              {bestRoll}
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </main>
       <Footer />

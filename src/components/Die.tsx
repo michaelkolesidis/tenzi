@@ -1,9 +1,13 @@
 import React from "react";
 
+interface Props {
+  key: string;
+  isHeld: boolean;
+  value: number;
+  holdDice: () => object | void;
+}
 
-
-
-export default function Die(props: any) {
+const Die: React.FC<Props> = (props) => {
   const styles = {
     backgroundColor: props.isHeld ? "rgba(247, 182, 41, 0.9)" : "white",
   };
@@ -86,4 +90,6 @@ export default function Die(props: any) {
       {face()}
     </div>
   );
-}
+};
+
+export default Die;

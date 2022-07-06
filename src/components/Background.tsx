@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Background() {
+const Background: React.FC = () => {
   return (
     <svg
       id="spinning-rays"
@@ -76,3 +76,5 @@ export default function Background() {
     </svg>
   );
 }
+
+export default Background;
