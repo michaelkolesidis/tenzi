@@ -4,68 +4,36 @@
   
   <h3>Roll until all dice are the same</h3>
 
-  <a href="https://tenzi-react.netlify.app/"><h3>Try me!</h3></a>
+<h3><a href="https://tenzi-react.netlify.app/">Try me!</a></h3>
 
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/08045f0f-324b-4b71-9612-42a3707454e8/deploy-status)](https://app.netlify.com/sites/tenzi-react/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08045f0f-324b-4b71-9612-42a3707454e8/deploy-status)](https://app.netlify.com/sites/tenzi-react/deploys)
 
 </div>
-  
-  
 
 ## Technologies Used
-
 
 <a href="https://reactjs.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/react/react-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.typescriptlang.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/typescript/typescript-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://webpack.js.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/webpack/webpack-original.svg" height="50px" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.yarnpkg.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/yarn/yarn-original.svg" height="50px" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://sass-lang.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/sass/sass-original.svg" height="50px" /></a>
-
-
 
 ## Description
 
-<p> Tenzi is a dice game used to demonstrate the use of React Hooks (useState, useEffect).</p>
+Tenzi is a dice game used to demonstrate the use of React Hooks (useState, useEffect).
 
-<p>The player needs to roll dice until they are all the same. Clicking on a dice, freezes it at its current value between rolls.</p>
+The player needs to roll dice until they are all the same. Clicking on a dice, freezes it at its current value between rolls
 
-<p>Best scores are saved to local storage.</p>
-
-
+Best scores are saved to local storage.
 
 ## Screenshots
 
 <img src="./screenshots/screenshot-02.png" height="500px">
 <img src="./screenshots/screenshot-01.png" height="500px">
 
-
-
 ## License
 
-<a href="https://www.gnu.org/licenses/gpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/GPLv3_Logo.svg" height="100px" /></a>
+<a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
 
-Copyright (c) 2022 Michael Kolesidis<br>
-Licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
-
-
-
-<br>
-<br>
-
-
-
-[//]: # (Free Software)
-<div align="center">
-  <br>
-  <br>
-
-  <a href="https://github.com/michaelkolesidis/made-with-linux" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Made_with_Linux.png/240px-Made_with_Linux.png"></a>
-</div>
-<br>                                                      
-<div align="center">
-  <a href="https://endsoftwarepatents.org/innovating-without-patents"><img style="height: 90px;" src="https://static.fsf.org/nosvn/esp/logos/innovating-without-patents.svg"></a>
-</div>
+Copyright (c) 2023 Michael Kolesidis<br>
+Licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).
