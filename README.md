@@ -4,10 +4,6 @@
   
   <h3>Roll until all dice are the same</h3>
 
-<h3><a href="https://tenzi-react.netlify.app/">Try me!</a></h3>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/08045f0f-324b-4b71-9612-42a3707454e8/deploy-status)](https://app.netlify.com/sites/tenzi-react/deploys)
-
 </div>
 
 ## Technologies Used
@@ -35,5 +31,5 @@ Best scores are saved to local storage.
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
 
-Copyright (c) 2023 Michael Kolesidis<br>
+Copyright (c) Michael Kolesidis<br>
 Licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).
