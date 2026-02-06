@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Background: React.FC = () => {
   return (
@@ -75,6 +75,6 @@ const Background: React.FC = () => {
       </path>
     </svg>
   );
-}
+};
 
 export default Background;

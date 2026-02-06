@@ -1,16 +1,16 @@
-import React from "react";
-import Die from "./components/Die";
-import { nanoid } from "nanoid";
-import Confetti from "react-confetti";
-import Background from "./components/Background";
-import Footer from "./components/Footer";
+import React from 'react';
+import Die from './components/Die';
+import { nanoid } from 'nanoid';
+import Confetti from 'react-confetti';
+import Background from './components/Background';
+import Footer from './components/Footer';
 
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice());
   const [tenzies, setTenzies] = React.useState(false);
   const [rolls, setRolls] = React.useState(0);
   const [bestRoll, setBestRoll] = React.useState(
-    parseInt(localStorage.getItem("bestRoll")!) || 0
+    parseInt(localStorage.getItem('bestRoll')!) || 0,
   );
 
   React.useEffect(() => {
@@ -23,7 +23,7 @@ export default function App() {
   }, [dice]);
 
   React.useEffect(() => {
-    localStorage.setItem("bestRoll", bestRoll.toString());
+    localStorage.setItem('bestRoll', bestRoll.toString());
   }, [bestRoll]);
 
   function generateNewDie() {
@@ -47,7 +47,7 @@ export default function App() {
       setDice((oldDice) =>
         oldDice.map((die) => {
           return die.isHeld ? die : generateNewDie();
-        })
+        }),
       );
       setRolls((oldRolls) => oldRolls + 1);
     } else {
@@ -66,7 +66,7 @@ export default function App() {
     setDice((oldDice) =>
       oldDice.map((die) => {
         return die.id === id ? { ...die, isHeld: !die.isHeld } : die;
-      })
+      }),
     );
   }
 
@@ -84,16 +84,14 @@ export default function App() {
       {tenzies && <Confetti />}
       <Background />
       <main>
-        <a href="https://tenzi-react.netlify.app/">
-          <h1 className="title">Tenzi!</h1>
-        </a>
+        <h1 className="title">Tenzi!</h1>
         <p className="instructions">
           Roll until all dice are the same. Click each die to freeze it at its
           current value between rolls.
         </p>
         <div className="dice-container">{diceElements}</div>
         <button className="roll-dice" onClick={rollDice}>
-          {tenzies ? "New Game" : "Roll"}
+          {tenzies ? 'New Game' : 'Roll'}
         </button>
         <div className="stats">
           <div>
@@ -108,7 +106,7 @@ export default function App() {
               {bestRoll}
             </div>
           ) : (
-            ""
+            ''
           )}
         </div>
       </main>

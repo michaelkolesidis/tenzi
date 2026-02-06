@@ -12,7 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.typescriptlang.org/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/typescript/typescript-original.svg" height="50px" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://sass-lang.com/"><img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/sass/sass-original.svg" height="50px" /></a>
+<a href="https://vitejs.dev/"><img src="https://vitejs.dev/logo.svg" height="50px" /></a>
 
 ## Description
 

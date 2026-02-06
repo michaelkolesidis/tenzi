@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface Props {
   key: string;
@@ -9,7 +9,7 @@ interface Props {
 
 const Die: React.FC<Props> = (props) => {
   const styles = {
-    backgroundColor: props.isHeld ? "rgba(247, 182, 41, 0.9)" : "white",
+    backgroundColor: props.isHeld ? 'rgba(247, 182, 41, 0.9)' : 'white',
   };
 
   function face() {
@@ -92,4 +92,3 @@ const Die: React.FC<Props> = (props) => {
 };
 
 export default Die;
-

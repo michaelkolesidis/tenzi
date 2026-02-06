@@ -1,8 +1,10 @@
-$main-color: rgb(80, 53, 255);
+:root {
+  --main-color: rgb(80, 53, 255);
+}
 
 * {
   box-sizing: border-box;
-  font-family: "Jua", sans-serif;
+  font-family: 'Jua', sans-serif;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
-  fill: $main-color;
+  fill: var(--main-color);
   z-index: -1;
 }
 
@@ -73,7 +75,7 @@ main {
   width: 150px;
   border: none;
   border-radius: 6px;
-  background-color: $main-color;
+  background-color: var(--main-color);
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
@@ -151,15 +153,15 @@ main {
 }
 
 .fourth-face,
-.sixth-face,
-.fifth-face {
+.fifth-face,
+.sixth-face {
   display: flex;
   justify-content: space-between;
 }
 
 .fourth-face .column,
-.sixth-face .column,
-.fifth-face .column {
+.fifth-face .column,
+.sixth-face .column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,20 +177,20 @@ footer {
   bottom: 0;
   display: flex;
   justify-self: left;
+}
 
-  p {
-    margin-left: 0.5rem;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 2px 1px 0px #000;
-  }
+footer p {
+  margin-left: 0.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 1px 0px #000;
+}
 
-  a,
-  a:visited {
-    color: #fff;
-  }
+footer a,
+footer a:visited {
+  color: #fff;
+}
 
-  #name {
-    font-size: 1.2rem;
-  }
+footer #name {
+  font-size: 1.2rem;
 }
